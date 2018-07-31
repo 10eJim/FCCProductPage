@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#page-wrapper {
+  position: relative;
+  font-family: Roboto, Lato, sans-serif;
+}
+
+#header {
+  background-color: rgba(1,1,1,.5);
+  top: 0;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 125px;
+}
+
+.logo {
+  max-height: 100px;
+  width: 60vw;
+  display: flex;
+}
+
+.logo h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+#header-img {
+  height: 35px; 
+  max-width: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+
+nav {
+  font-weight: 500;
+}
+
+ul {
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  padding: 5px;
+}
+
+.nav-link {
+  text-decoration: none;
+  width: 50px;
+  padding: 5px 15px;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+}
+
+.nav-link:hover {
+  border-radius: 20px;
+  border: 3px solid steelblue;
+  font-weight: 700;
+  background-color: steelblue;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+#home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url(https://images.unsplash.com/photo-1503642551022-c011aafb3c88?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e402f612efd271ac52647651246a2cd9&auto=format&fit=crop&w=1050&q=80);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+#home h1 {
+  width: 95%;
+  font-size: 2em;
+  text-shadow: 1px 1px 1px steelblue;
+  color: white;
+  text-align: center;
+}
+
+#home h2 {
+  color: white;
+}
+
+.container {
+  width: 100%;
+  margin-top: 90px;
+  margin: auto;
+  background-color: #e8e8e8;
+  
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+iframe {
+  max-width: 700px;
+  width: 100%;
+  margin-top: 75px;
+  margin-bottom: 30px;
+  box-shadow: 10px 10px 50px 
+}
+#about h1 {
+  margin-top: 20px;
+  font-size: 3em;
+  letter-spacing: .1em;
+  text-shadow: 1px 1px 1px steelblue;
+}
+
+#about p {
+  margin: 20px 30px;
+}
+
+.services-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0px 30px 0px 30px;
+}
+
+
+
+.services {
+  width: 300px;
+  margin: 90px auto;
+  background-color: transparent;
+  border: 0px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services img {
+  width: 275px;
+  height: 450px;
+  box-shadow: 10px 10px 25px steelblue;
+  border-radius: 10px;
+  
+}
+
+@media (max-width: 1000px) {
+  .services-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column;
+  justify-content: space-around;
+  margin: 0px 30px 0px 30px;
+    }
+
+  .services {
+  width: 80%;
+  min-width: 400px;
+  margin: 30px auto;
+  background-color: transparent;
+  border: 0px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    }
+  
+  .services img {
+  width: 300px;
+  height: 500px;
+  box-shadow: 10px 10px 25px steelblue;
+  border-radius: 10px;
+    }
+ 
+  .services h1 {
+  width: 95%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: .05em;
+  text-shadow: 1px 1px 1px steelblue;
+    }
+  .services p {
+    width: 100%;
+    margin: 20px auto;
+}
+}
+
+
+.services h1 {
+  width: 95%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 36pt;
+  letter-spacing: .05em;
+  text-shadow: 1px 1px 1px steelblue;
+  
+}
+
+
+.contactUs {
+  text-align: justify;
+  font-weight: 700
+}
+
+#weAre {
+  text-align: justify;
+}
+
+#contact {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: justify;
+  
+}
+
+input[type="email"] {
+    max-width: 275px;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 2px;
+  }
+
+input[type="submit"] {
+  max-width: 150px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px; 
+    background-color: steelblue;
+}
